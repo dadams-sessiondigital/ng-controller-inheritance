@@ -1,0 +1,16 @@
+<!doctype html>
+
+<script src="/vendor/angular/angular.min.js"></script>
+<script src="/app/js/app-scope.js"></script>
+
+<body ng-app="app">
+    <div ng-controller="baseCtrl">
+        <p>Name: {{name}}</p>
+        <p>Message: {{message}}</p>
+    </div>
+    <br />
+    <div ng-controller="childCtrl">
+        <p ng-click="changeName()">Name: {{name}}</p>
+        <p ng-click="alertMessage()">Message: {{message}}</p>
+    </div>
+</body>

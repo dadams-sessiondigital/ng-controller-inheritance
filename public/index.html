@@ -1,0 +1,21 @@
+<!doctype html>
+
+<script src="/vendor/angular/angular.min.js"></script>
+<script src="/app/js/app.js"></script>
+
+<body ng-app="app">
+    <div ng-controller="baseCtrl as base">
+        <p>Name: {{base.name}}</p>
+        <p>Message: {{base.message}}</p>
+    </div>
+    <br />
+    <div ng-controller="childCtrl as child">
+        <p ng-click="child.showName()">Name: {{child.name}}</p>
+        <p>Message: {{child.message}}</p>
+    </div>
+    <br />
+    <div ng-controller="mixinCtrl as mixin">
+        <p ng-click="mixin.changeName()">Name: {{mixin.name}}</p>
+        <p>Message: {{mixin.message}}</p>
+    </div>
+</body>
